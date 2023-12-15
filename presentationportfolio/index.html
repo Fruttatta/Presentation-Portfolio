@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+<!---Styles and links for icons, and fonts--->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <title> Presentation Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+<!---navigation bar--->
+<section class="header">
+     <nav>
+      <a href="index.html"><img src="./image/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-window-close" onclick="hidemenu()"></i>
+       <ul>
+         <li><a href="index.html">HOME</a></li>
+         <li><a href="portfolio.html">PORTFOLIO</a></li>
+         <li><a href="contact.html">CONTACT</a></li>
+       </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showmenu()"></i>
+     </nav>
+
+<div class="text-box">
+ <h1> Welcome to the Fruttatta Workspace </h1>
+ <p2>Below you will find a short introduction, I hope to pique your interest, have a great day</p2>
+ <p></p>
+ <a href="portfolio.html" class="hero-btn"> If you want to want to see my content! </a>
+</div>
+
+</section>
+
+<!---About me--->
+<section class="aboutme">
+ <h1> About Me </h1>
+ <div class="row">
+   <div class="portrait">
+ <img src="./image/mig-flipped.jpg">
+</div>
+<div class="portrait">
+  <h3> What do I have to say about myself? </h3>
+  <p> Fresh out from Grenaa HTX Gynmasium, took a 3 year education in communication, design and videogame design. I've personally always had an opinion when it came to aesthetics and in recent years taken a real interest in making that a profession. I'm a novice 3d modeller, graphic designer and now amateur photograph. <br> <br> I hope to better my understanding of products and the thoughts behind developing them, while deepening my understanding of graphical media. </p>
+  </div>
+
+</div>
+ <div class="row">
+   <div class="aboutme-col">
+     <h3> Interests </h3>
+     <p> *Video Games <br> *Design <br> *Interactive Design <br> *Storytelling <br> *Voice Acting </p>
+   </div>
+
+   <div class="aboutme-col">
+     <h3> Previous Experiences </h3>
+     <p> *Numerous School Design Projects <br> *Incubator Design Clients </p>
+   </div>
+
+   <div class="aboutme-col">
+     <h3> Education </h3>
+     <p> *Nyborg Friskole <br> *Videndjurs Game Design HTX <br> *UCL (currently) </p>
+   </div>
+
+ </div>
+</section>
+<!--- Footer Section --->
+<section class="footer">
+ <h4> Get a hold of me </h4>
+ <p> Easiest and fastest way is my email <br> Malikdsw@gmail.com </p>
+  <div class="icons">
+    <i class="fa fa-envelope"></i>
+  </div>
+ </section>
+<!---Javascript for togglemenu--->
+<script>
+  var navLinks = document.getElementById("navLinks")
+  function showmenu(){
+    navLinks.style.right="0";
+  }
+  function hidemenu(){
+    navLinks.style.right="-200px";
+  }
+</script>
+  </body>
+</html>

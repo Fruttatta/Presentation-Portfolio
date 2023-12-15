@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+<!---Styles and links for icons, and fonts--->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <title> Presentation Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+<!---navigation bar--->
+<section class="header">
+     <nav>
+      <a href="index.html"><img src="./image/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-window-close" onclick="hidemenu()"></i>
+       <ul>
+         <li><a href="index.html">HOME</a></li>
+         <li><a href="portfolio.html">PORTFOLIO</a></li>
+         <li><a href="contact.html">CONTACT</a></li>
+       </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showmenu()"></i>
+     </nav>
+<div class="text-box">
+ <h1> Welcome to the Fruttatta Workspace </h1>
+ <p2>Here are my current contact methods, please do reach out to me if you have any questions regarding me or my work. </2p>
+ </div>
+</section>
+<section class="contact-us">
+ <div class="row">
+   <div class="contact-col">
+    <div>
+      <span>
+        <h5> Mobile Phone Number <h5>
+          <p> +45 28 96 81 92 </p>
+    </div>
+     <div>
+       <span>
+         <h5> My professional email <h5>
+           <p> malikdsw@gmail.com </p>
+     </div>
+  </div>
+</div>
+</section>
+<p> <br><br><br><br><br> </p>
+<!---Javascript for togglemenu--->
+<script>
+  var navLinks = document.getElementById("navLinks")
+  function showmenu(){
+    navLinks.style.right="0";
+  }
+  function hidemenu(){
+    navLinks.style.right="-200px";
+  }
+</script>
+  </body>
+</html>

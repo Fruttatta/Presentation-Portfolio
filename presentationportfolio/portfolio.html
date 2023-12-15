@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+<!---Styles and links for icons, and fonts--->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <title> Presentation Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+<!---navigation bar--->
+<section class="header">
+     <nav>
+      <a href="index.html"><img src="./image/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-window-close" onclick="hidemenu()"></i>
+       <ul>
+         <li><a href="index.html">HOME</a></li>
+         <li><a href="portfolio.html">PORTFOLIO</a></li>
+         <li><a href="contact.html">CONTACT</a></li>
+       </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showmenu()"></i>
+     </nav>
+
+<div class="text-box">
+ <h1> Welcome to the Fruttatta Workspace </h1>
+ <p2>This is the portfolio section, where I am currently displaying a series of photographs that I took. </p2>
+</div>
+</section>
+
+<!---Portfolio--->
+<section class="portfoliome">
+ <h1> About Me </h1>
+ <p2> A display of some photos I took and edited. </p2>
+</section>
+<section class="portfoliophotos">
+ <div class="row">
+ <div class="portfoliophotos-col">
+   <img src="./image/citrong.jpg" class="portfolioimage">
+ </div>
+ <div class="portfoliophotos-col">
+   <img src="./image/beerg.jpg" class="portfolioimage">
+ </div>
+ <div class="portfoliophotos-col">
+   <img src="./image/coffeeg.jpg" class="portfolioimage">
+ </div>
+ </div>
+</section>
+<section class="portfoliophotos">
+ <div class="row">
+ <div class="portfoliophotos-col">
+   <img src="./image/beer.jpg" class="portfolioimage">
+ </div>
+ <div class="portfoliophotos-col">
+   <img src="./image/citron.jpg" class="portfolioimage">
+ </div>
+ <div class="portfoliophotos-col">
+   <img src="./image/coffee.jpg" class="portfolioimage">
+ </div>
+ </div>
+</section>
+<!--- Footer Section --->
+<section class="footer">
+ <h4> Get a hold of me </h4>
+ <p> Easiest and fastest way is my email <br> Malikdsw@gmail.com </p>
+  <div class="icons">
+    <i class="fa fa-envelope"></i>
+  </div>
+ </section>
+<!---Javascript for togglemenu--->
+<script>
+  var navLinks = document.getElementById("navLinks")
+  function showmenu(){
+    navLinks.style.right="0";
+  }
+  function hidemenu(){
+    navLinks.style.right="-200px";
+  }
+</script>
+  </body>
+</html>
